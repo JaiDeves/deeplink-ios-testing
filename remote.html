@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebView Interaction</title>
+    <script src="remote-messaging.js"></script>
+
+    <script>
+        function myFunction() {
+            // document.getElementById("token").innerHTML = "Iframe is loaded."
+            // setTimeout(() => {
+            //     setToken();
+            // }, 10000);
+
+        }
+    </script>
+</head>
+
+<body onload="myFunction()">
+    <div class="titlebar">
+        <div class="container">
+            <h1>Swift-JS Interaction</h1>
+        </div>
+    </div>
+
+    <div class="searchInput">
+        <div class="container">
+            <button onclick="remoteGetToken();">getToken</button>
+        </div>
+    </div>
+
+    <h1 id="output" style="color:blue;">Output</h1>
+    <h1 id="token" style="color:blue;"></h1>
+
+    <div class="results">
+        <div class="container">
+        </div>
+    </div>
+
+</body>
+
+</html>
